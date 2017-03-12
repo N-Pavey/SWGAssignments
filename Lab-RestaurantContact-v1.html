@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab - Restaurant v1 Menu</title>
+</head>
+<body>
+	<h1 align="center">Super Burger</h1>
+	<hr/>
+	<table cellspacing="10px">
+		<tr>
+			<td><a href="Lab-RestaurantHome-v1.html">Home</a></td>
+			<td><a href="Lab-RestaurantMenu-v1.html">Menu</a></td>
+			<td><a href="Lab-RestaurantContact-v1.html">Contact Us</td>
+		</tr>
+	</table>
+	<hr/>
+	<form action="Lab-RestaurantContact-v1.html" method="POST">
+	<table width="500px" align="center" cellpadding="10px">
+		<tr>
+			<td align="right">Name:</td>
+			<td><input type="text" name="Name"></td>
+		</tr>
+		<tr>
+			<td align="right">Email:</td>
+			<td><input type="text" name="Email"></td>
+		</tr>
+		<tr>
+			<td align="right">Phone:</td>
+			<td><input type="text" name="Phone"></td>
+		</tr>
+		<tr>
+			<td align="right">Reason for Inquiry:</td>
+			<td><select name="InquiryReason">
+				<option value="Catering">Catering (Default)</option>
+				<option value="PrivateParty">Private Party</option>
+				<option value="Feedback">Feedback</option>
+				<option value="Other">Other</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td align="right">Additional Information:</td>
+			<td><textarea name="AddInfo"></textarea>
+		</tr>
+		<tr>
+			<td align="right">Have you been to the restaurant?</td>
+			<td><input type="radio" name="VisitedRestaurant" value="No" checked>No     <input type="radio" name="VisitedRestaurant" value="Yes">Yes</td>
+		</tr>
+		<tr>
+			<td align="right">Best days to contact you:</td>
+			<td><input type="checkbox" name="ContactDays" value="M">M
+				<input type="checkbox" name="ContactDays" value="T">T 
+				<input type="checkbox" name="ContactDays" value="W">W 
+				<input type="checkbox" name="ContactDays" value="Th">Th 
+				<input type="checkbox" name="ContactDays" value="F">F
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="Send Request"></td>
+		</tr>
+	</table>
+	</form>
+	<hr/>
+	<p align="center">707 Justice Avenue | Liberty, Kentucky | 70707</p>
+	<p align="center">555.BURGERS | 555.287.4377</p>
+</body>
+</html>

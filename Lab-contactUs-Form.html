@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab - Contact Us</title>
+</head>
+<body>
+<form action="Lab-contactUs-Form.html" method="POST">
+	<table cellspacing="10px">
+		<tr>
+			<td align="right">First Name:</td>
+			<td><input type="text" name="firstName">
+		</tr>
+		<tr>
+			<td align="right">Last Name:</td>
+			<td><input type="text" name="lastName">
+		</tr>
+		<tr>
+			<td align="right">Email:</td>
+			<td><input type="text" name="email">
+		</tr>
+		<tr>
+			<td align="right">Type of License:</td>
+			<td><input type="radio" name="LicenseType" value="Business" checked>Business     <input type="radio" name="LicenseType" value="Personal">Personal</td>
+		</tr>
+		<tr>
+			<td align="right">Reason:</td>
+			<td><select name="Reason">
+				<option value="SelectReason">Select a Reason</option>
+				<option value="SoftwareSupport">Software Support</option>
+				<option value="HardwareSupport">Hardware Support</option>
+				<option value="InformationRequest">Information Request</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td align="right">Additional Information:</td>
+			<td><textarea name="AddInfo"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="checkbox" value="CheckTermsOfService">I have read the terms of service.</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="Send Request"></td>
+		</tr>
+</form>
+</body>
+</html>
