@@ -20,3 +20,9 @@ table {
 th, td, tr {
 	border: 1px black solid;
 }
+
+@font-face {
+	font-family: 'RomanaBT-Roman';
+	src: url('romana-bt.ttf');
+	font-style: normal;
+}
