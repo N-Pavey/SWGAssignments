@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="restaurantStyles.css"
+	rel="stylesheet"
+	type="text/css" />
+	
+<style>
+	.formTable {
+		width: 500px;
+		border-spacing: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.questionForm {
+		text-align: right;
+		font-weight: bold;
+	}
+	
+	#submitForm {
+		text-align: center;
+	}
+</style>
+	
+	<title>Lab - Restaurant Contact</title>
+</head>
+<body>
+	<h1>Super Burger</h1>
+	<hr/>
+	<table class="headerTable" cellspacing="10px">
+		<tr>
+			<td class="headerNav"><a href="Lab-RestaurantHome-v4.html">Home</a></td>
+			<td class="headerNav"><a href="Lab-RestaurantMenu-v4.html">Menu</a></td>
+			<td class="headerNav"><a href="Lab-RestaurantContact-v4.html">Contact Us</td>
+		</tr>
+	</table>
+	<hr/>
+	<form action="Lab-RestaurantContact-v1.html" method="POST">
+	<table class="formTable">
+		<tr>
+			<td class="questionForm">Name:</td>
+			<td><input type="text" name="Name"></td>
+		</tr>
+		<tr>
+			<td class="questionForm">Email:</td>
+			<td><input type="text" name="Email"></td>
+		</tr>
+		<tr>
+			<td class="questionForm">Phone:</td>
+			<td><input type="text" name="Phone"></td>
+		</tr>
+		<tr>
+			<td class="questionForm">Reason for Inquiry:</td>
+			<td><select name="InquiryReason">
+				<option value="Catering">Catering (Default)</option>
+				<option value="PrivateParty">Private Party</option>
+				<option value="Feedback">Feedback</option>
+				<option value="Other">Other</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td class="questionForm">Additional Information:</td>
+			<td><textarea name="AddInfo"></textarea>
+		</tr>
+		<tr>
+			<td class="questionForm">Have you been to the restaurant?</td>
+			<td><input type="radio" name="VisitedRestaurant" value="No" checked>No     <input type="radio" name="VisitedRestaurant" value="Yes">Yes</td>
+		</tr>
+		<tr>
+			<td class="questionForm">Best days to contact you:</td>
+			<td><input type="checkbox" name="ContactDays" value="M">M
+				<input type="checkbox" name="ContactDays" value="T">T 
+				<input type="checkbox" name="ContactDays" value="W">W 
+				<input type="checkbox" name="ContactDays" value="Th">Th 
+				<input type="checkbox" name="ContactDays" value="F">F
+			</td>
+		</tr>
+	</table>
+	<p id="submitForm"><input type="submit" value="Send Request"></p>
+	</form>
+	<hr/>
+	<p class="footer">707 Justice Avenue | Liberty, Kentucky | 70707</p>
+	<p class="footer">555.BURGERS | 555.287.4377</p>
+</body>
+</html>
