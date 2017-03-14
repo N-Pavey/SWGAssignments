@@ -1,0 +1,27 @@
+#div1 {
+	height: 150px;
+	width: 400px;
+	margin: 20px;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+Total Height: m-top + b-top + p-top + content-h + p-bottom + b-bottom + m-bottom
+	20px + 1px + 10px + 150px + 10px + 1px + 20px
+	31 + 150 + 31
+	212px
+
+Total Width: m-left + b-left + p-left + content-w + p-right + b-right + m-right
+	20px + 1px + 10px + 400px + 10px + 1px + 20px
+	31 + 400 + 31
+	462px
+
+Browser Calculated Height: b-top + p-top + content-h + p-bottom + b-bottom
+	1px + 10px + 150px + 10px + 1px
+	11 + 150 + 11
+	172px
+
+Browser Calculated Width: b-left + p-left + content-w + p-right + b-right
+	1px + 10px + 400px + 10px + 1px
+	11 + 400 + 11
+	422px
