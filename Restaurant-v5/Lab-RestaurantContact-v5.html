@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="restaurantStyles.css"
+	rel="stylesheet"
+	type="text/css" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+
+<!-- Bootstrap CSS Theme - Optional -->
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css"/>
+
+<!-- Bootstrap JavaScript -->
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/js/bootstrap.js"/>
+	
+<style>
+	.formTable {
+		width: 500px;
+		border-spacing: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.questionForm {
+		text-align: right;
+		font-weight: bold;
+	}
+	
+	#submitForm {
+		text-align: center;
+	}
+</style>
+	
+	<title>Lab - Restaurant Contact</title>
+</head>
+<body>
+	<h1>Super Burger</h1>
+	<hr/>
+		<ul class="nav nav-pills nav-justified">
+			<li><a href="Lab-RestaurantHome-v5.html"><span class="glyphicon glyphicon-home"> </span></a></li>
+			<li><a href="Lab-RestaurantMenu-v5.html">Menu</a></li>
+			<li class="active"><a href="Lab-RestaurantContact-v5.html">Contact Us</a></li>
+		</ul>
+	<hr/>
+	<div class="container-fluid">
+		<div class="row">
+			<form action="Lab-RestaurantContact-v1.html" method="POST">
+			<div class="col-sm-3"> </div>
+			<div class="col-sm-6">
+			<table class="formTable">
+				<tr>
+					<td class="questionForm" width="50%">Name:</td>
+					<td width="50%"><input type="text" name="Name"></td>
+				</tr>
+				<tr>
+					<td class="questionForm">Email:</td>
+					<td><input type="text" name="Email"></td>
+				</tr>
+				<tr>
+					<td class="questionForm">Phone:</td>
+					<td><input type="text" name="Phone"></td>
+				</tr>
+				<tr>
+					<td class="questionForm">Reason for Inquiry:</td>
+					<td><select name="InquiryReason">
+						<option value="Catering">Catering (Default)</option>
+						<option value="PrivateParty">Private Party</option>
+						<option value="Feedback">Feedback</option>
+						<option value="Other">Other</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="questionForm">Additional Information:</td>
+					<td><textarea name="AddInfo"></textarea>
+				</tr>
+				<tr>
+					<td class="questionForm">Have you been to the restaurant?</td>
+					<td><input type="radio" name="VisitedRestaurant" value="No" checked>No     <input type="radio" name="VisitedRestaurant" value="Yes">Yes</td>
+				</tr>
+				<tr>
+					<td class="questionForm">Best days to contact you:</td>
+					<td><input type="checkbox" name="ContactDays" value="M">M
+						<input type="checkbox" name="ContactDays" value="T">T 
+						<input type="checkbox" name="ContactDays" value="W">W 
+						<input type="checkbox" name="ContactDays" value="Th">Th 
+						<input type="checkbox" name="ContactDays" value="F">F
+					</td>
+				</tr>
+			</table>
+			<p id="submitForm"><input type="submit" value="Send Request"></p>
+			</div>
+			<div class="col-sm-3"> </div>
+			</form>
+		</div>
+	</div>
+	<hr/>
+	<p class="footer">707 Justice Avenue | Liberty, Kentucky | 70707</p>
+	<p class="footer">555.BURGERS | 555.287.4377</p>
+</body>
+</html>
