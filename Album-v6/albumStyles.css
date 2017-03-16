@@ -1,0 +1,34 @@
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+table {
+	width: 90%;
+	background-color: LightSkyBlue;
+	border: 1px black solid;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td, tr {
+	border: 1px black solid;
+}
+
+tbody {
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'RomanaBT-Roman';
+	src: url('romana-bt.ttf');
+	font-style: normal;
+}
