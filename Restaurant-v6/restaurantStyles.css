@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+h1 {
+	text-align: center;
+	font-family: 'Bangers', sans-serif;
+	font-size: 42px;
+}
+
+a {
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+a:visited {
+	color: Tomato;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+tbody {
+	text-align: left;
+}
+
+thead {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.headerTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.headerNav {
+	text-align: center;
+	width: 33%;
+}
+
+.footer {
+	text-align: center;
+}
